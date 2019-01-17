@@ -33,13 +33,14 @@ answer = 77 + math.cos(2.75)
 answer1=math.sqrt(answer)
 print(answer1)
 ###############################################################################
-# TODO: 3.
+# DONE: 3.
 #   Immediately below this _TODO_, write code that computes and prints:
 #      the square root of ((41 * 88) + (4 * the cosine of 2))
 #   Use as few or as many intermediate names as you feel appropriate.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 ###############################################################################
-
+answer3 = math.sqrt((41 * 88) + (4 * math.cos(2)))
+print(answer3)
 ###############################################################################
 # TODO: 4.
 #   Immediately below this _TODO_,
