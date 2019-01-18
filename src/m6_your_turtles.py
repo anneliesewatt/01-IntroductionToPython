@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Anneliese Watt.
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# DONE: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -28,3 +28,49 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+import rosegraphics as rg
+
+window = rg.TurtleWindow()
+
+tom = rg.SimpleTurtle('turtle')
+tom.pen = rg.Pen('yellow', 5)
+tom.speed = 20
+
+size = 130
+
+for k in range(7):
+
+    tom.draw_circle(size)
+
+    tom.pen_up()
+    tom.left(45)
+    tom.forward(15)
+    tom.left(45)
+
+    tom.pen_down()
+    size = size - 10
+
+for k in range(15):
+    tom.left(90)
+    tom.forward(20)
+
+sally = rg.SimpleTurtle('turtle')
+sally.pen = rg.Pen('red', 20)
+sally.speed = 20
+
+size = 50
+
+for k in range (2):
+    sally.draw_square(size)
+    sally.pen_up()
+    sally.right (90)
+    sally.forward (5)
+    sally.right (90)
+
+    sally.pen_down()
+    size = size - 5
+for k in range (15):
+    sally.right (45)
+    sally.forward(10)
+
+window.close_on_mouse_click()
