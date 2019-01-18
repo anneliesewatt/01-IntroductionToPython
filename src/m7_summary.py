@@ -2,7 +2,7 @@
 An exercise that summarizes what you have learned in this Session.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and Watt.
+         Aaron Wilkin, their colleagues, and Anneliese Watt.
 """
 ########################################################################
 # DONE: 1.
