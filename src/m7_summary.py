@@ -61,3 +61,4 @@ jack.pen =rg.Pen('green', 10)
 jack.left(180)
 jack.forward(150)
 
+window.close_on_mouse_click()
